@@ -1,0 +1,12 @@
+<div class="todoapp">
+    <mat-toolbar color="primary">
+        Todoapp RocketLab
+        <button mat-fab class="fab-add" color="warn" (click)="todoDialog()">
+            <mat-icon>add</mat-icon>
+        </button>
+    </mat-toolbar>
+</div>
+
+
+<app-dialog [title]="'Nueva Tarea'" [template]="'Ingrese Tarea:'" [placeholder]="'Que tarea tienes pendiete?'" [okText]="okButtonText" [value]="fieldValue" (valueEmitted)="updateTodo($event)" [showPrompt]="showDialog">
+</app-dialog>

@@ -1,0 +1,10 @@
+:host {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.fab-add {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+}

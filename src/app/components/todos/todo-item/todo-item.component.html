@@ -1,0 +1,22 @@
+<form>
+    <mat-list-item *ngFor="let todo of todoList; let index=index" class="list-item">
+
+        <mat-checkbox color="primary" type="checkbox" [name]="'item'+index" (change)="markCompleted(todo)" [(ngModel)]="todo.completed">
+            <span [class.completed]="todo.completed">{{todo.title}}</span>
+        </mat-checkbox>
+
+        <span>
+            <button mat-mini-fab (click)="remove(todo)" color="primary">
+              <mat-icon>delete_forever</mat-icon>
+            </button>
+            <button mat-mini-fab (click)="todoDialog(todo)" color="primary"
+                    [disabled]="todo.completed">
+              <mat-icon>mode_edit</mat-icon>
+            </button>
+        </span>
+
+    </mat-list-item>
+</form>
+
+<app-dialog [title]="'Nueva Tarea'" [template]="'Ingrese Tarea:'" [placeholder]="'Que tarea tienes pendiete?'" [okText]="okButtonText" [value]="fieldValue" (valueEmitted)="updateTodo($event)" [showPrompt]="showDialog">
+</app-dialog>

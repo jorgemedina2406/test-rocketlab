@@ -1,0 +1,17 @@
+<div class="card">
+    <mat-card class="mt-5 card-verify text-center">
+        <mat-card-title>
+            <h3>Gracias por registrarse</h3>
+        </mat-card-title>
+        <mat-card-content>
+            <p>Hemos enviado un email de confirmacion.</p>
+            <p>Por favor verifique su email y haga click en el link para verificarlo.</p>
+            <p>
+                <button type="button" mat-raised-button color="primary" (click)="authService.sendVerificationMail()">Reenviar email de verificacion</button>
+            </p>
+            <p>
+                <span>Desea regresar? <button type="button" mat-raised-button color="primary" routerLink="/login">Ingresar</button></span>
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

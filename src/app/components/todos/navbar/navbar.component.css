@@ -1,0 +1,37 @@
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mr-5 {
+    margin-right: 15px;
+}
+
+.square-8 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.bg-danger {
+    background-color: red;
+}
+
+.t-15 {
+    top: 15px;
+}
+
+.r-5 {
+    right: 5px;
+}

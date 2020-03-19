@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+app-authentication {
+    background: rgb(8, 0, 136) !important;
+    background: linear-gradient(90deg, rgba(8, 0, 136, 1) 0%, rgba(67, 10, 129, 1) 35%, rgba(134, 3, 167, 1) 100%) !important;
+}

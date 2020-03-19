@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>To do App RocketLab</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button color="accent" aria-label="Example icon-button with a heart icon" [matMenuTriggerFor]="belowMenu"> 
+            <mat-icon>notifications_none</mat-icon>
+            <span class="square-8 bg-danger pos-absolute t-15 r-5 rounded-circle"></span> 
+        </button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+            <button mat-menu-item *ngFor="let item of notifications">
+                {{ item.notification }} {{ item.list }}            
+            </button>
+        </mat-menu>
+        <button mat-icon-button color="accent" (click)="authService.signOut()"> 
+            <mat-icon class="example-icon" aria-hidden="false" aria-label="Salir">power_settings_new</mat-icon> 
+        </button>
+
+    </mat-toolbar-row>
+</mat-toolbar>
