@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -21,6 +21,7 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    HammerModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'test-rocketlab'),
     AngularFirestoreModule,
     AngularFireAuthModule,

@@ -1,7 +1,7 @@
 <div class="todoapp">
     <mat-toolbar color="primary">
-        Todoapp RocketLab
-        <button mat-fab class="fab-add" color="warn" (click)="todoDialog()">
+        ToDoList de {{ authService.userData.email }}
+        <button mat-fab class="fab-add" matTooltip="Crear Tarea" color="accent" (click)="todoDialog()">
             <mat-icon>add</mat-icon>
         </button>
     </mat-toolbar>

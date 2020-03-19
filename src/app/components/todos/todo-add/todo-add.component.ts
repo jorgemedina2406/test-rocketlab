@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodosService } from '../../../shared/services/todos.service';
+import { AuthService } from '../../../shared/services/auth.service';
 
 @Component({
   selector: 'app-todo-add',
@@ -15,8 +16,11 @@ export class TodoAddComponent implements OnInit {
   todoList: any;
 
   constructor(
-    private todosService: TodosService
-  ) { }
+    private todosService: TodosService,
+    public authService: AuthService
+  ) { 
+    console.log(this.authService.userData.email);
+  }
 
   ngOnInit(): void {
   }

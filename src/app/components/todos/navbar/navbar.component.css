@@ -35,3 +35,8 @@
 .r-5 {
     right: 5px;
 }
+
+.list-item {
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+}

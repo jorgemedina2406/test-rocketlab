@@ -10,8 +10,8 @@
             </mat-form-field>
         </mat-card-content>
         <mat-card-actions class="center">
-            <button mat-button (click)="emitValue(null)" color="primary">{{cancelText}}</button>
-            <button mat-raised-button (click)="emitValue(value)" color="primary">{{okText}}</button>
+            <button mat-button matTooltip="Cancelar" (click)="emitValue(null)" color="primary">{{cancelText}}</button>
+            <button mat-raised-button matTooltip="Guardar" (click)="emitValue(value)" color="primary">{{okText}}</button>
         </mat-card-actions>
     </mat-card>
 </div>

@@ -6,11 +6,11 @@
         </mat-checkbox>
 
         <span>
-            <button mat-mini-fab (click)="remove(todo)" color="primary">
+            <button mat-mini-fab (click)="remove(todo)" color="primary" matTooltip="Eliminar Tarea">
               <mat-icon>delete_forever</mat-icon>
             </button>
             <button mat-mini-fab (click)="todoDialog(todo)" color="primary"
-                    [disabled]="todo.completed">
+                    [disabled]="todo.completed" matTooltip="Editar Tarea">
               <mat-icon>mode_edit</mat-icon>
             </button>
         </span>
